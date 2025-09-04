@@ -58,7 +58,9 @@ resource "aws_security_group" "test_access" {
 
 
 }
-#security group end here#internet gateway code
+#security group end here
+
+#internet gateway code
 resource "aws_internet_gateway" "test-igw" {
   vpc_id = aws_vpc.test-vpc.id
 
